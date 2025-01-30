@@ -1,0 +1,17 @@
+<script>
+    // Add category filtering
+    document.querySelectorAll('.category-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelector('.category-btn.active').classList.remove('active');
+            btn.classList.add('active');
+            // Add filtering logic here
+        });
+    });
+
+    // Add image preview lightbox
+    document.querySelectorAll('.wallpaper-img').forEach(img => {
+        img.addEventListener('click', () => {
+            // Add lightbox implementation here
+        });
+    });
+</script>

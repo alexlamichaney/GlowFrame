@@ -1,0 +1,19 @@
+.loading {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.loading::after {
+    content: "";
+    width: 1290px;
+    height: 2796px;
+    border: 4px solid var(--primary);
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
